@@ -1,14 +1,26 @@
 # NAME
 
-Data::Compare::Module - Blah blah blah
+Data::Compare::Module - compare perl module namespaces
 
 # SYNOPSIS
 
     use Data::Compare::Module;
+    
+
+    my ($only_a, $only_b) = Data::Compare::Module::compare("Module::A", "Module::B");
+    
+
+    ### Objective manner
+    my $c = Data::Compare::Module->new;
+    my ($only_a, $only_b) = $c->compare('Module::A', 'Module::B');
+    
+
+    my $c = Data::Compare::Module->new('Module::A', 'Module::B');
+    my ($only_a, $only_b) = $c->compare;
 
 # DESCRIPTION
 
-Data::Compare::Module is
+Data::Compare::Module is to compare two modules' namespaces.
 
 # AUTHOR
 

@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "compare perl module namespaces",
    "author" : [
       "Tomoya KABE <limitusus@cpan.org>"
    ],
@@ -36,16 +36,21 @@
       },
       "runtime" : {
          "requires" : {
+            "List::Compare" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
+            "Test::Exception" : "0",
             "Test::More" : "0.88"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "version" : "0.01",
+   "x_contributors" : [
+      "limitusus <limit.usus@gmail.com>"
+   ]
 }
 
